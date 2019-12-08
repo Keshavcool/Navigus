@@ -1,0 +1,20 @@
+body {
+  padding-top: 56px;
+}
+
+#custom-nav {
+  background-color: burlywood;
+}
+
+#search-view {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  padding: 3%;
+}
+
+#img-star {
+  cursor: pointer;
+}

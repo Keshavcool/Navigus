@@ -1,0 +1,28 @@
+<!-- Page Features -->
+<div class="row">
+
+    <div class="col-md-4 col-sm-6 mb-4" ng-repeat="data in products">
+        <div class="row">
+            <div class="card">
+                <div class="row no-gutters main">
+                    <div class="col-md-3">
+                        <img src="./images/one_plus.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-block px-2">
+                            <h4 class="card-title">{{data.name}}</h4>
+                            <p class="card-text">{{data.description}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <img ng-if="data.isFav == 0" src="./images/white-star.png" alt="" id="img-star"
+                            ng-click="fav(data.id)">
+                        <img ng-if="data.isFav == 1" src="./images/black-star.png" alt="" id="img-star"
+                            ng-click="fav(data.id)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.row -->
